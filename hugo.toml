@@ -1,4 +1,4 @@
-baseURL = "https://personal-blog-cw2.pages.dev"  # 自訂網域設定後再更新
+baseURL = "https://blog.maineu.com" # 自訂網域設定後再更新
 locale = "zh-hant"
 title = "MaiNeu 開發紀實"
 theme = "PaperMod"
