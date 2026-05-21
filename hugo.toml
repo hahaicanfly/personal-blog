@@ -1,0 +1,87 @@
+baseURL = "https://your-domain.com"  # 稍後換成你的網域
+locale = "zh-hant"
+title = "MaiNeu 開發紀實"
+theme = "PaperMod"
+defaultContentLanguage = "zh-hant"
+hasCJKLanguage = true
+paginate = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  title = "MaiNeu 開發紀實"
+  description = "一個人用 AI 把想法變成真的——菜單翻譯 App 的開發故事"
+  keywords = ["AI", "Android", "開發", "MaiNeu", "Side Project", "Claude"]
+  author = "a17"
+  showToc = true
+  TocOpen = false
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableThemeToggle = false
+  defaultTheme = "auto"
+  ShowFullTextinRSS = false
+
+  [params.profileMode]
+    enabled = true
+    title = "MaiNeu 開發紀實"
+    subtitle = "拍下菜單、翻譯、點餐。一個人，用 AI，從零開始。"
+    [[params.profileMode.buttons]]
+      name = "技術版文章"
+      url = "/tech/"
+    [[params.profileMode.buttons]]
+      name = "一般讀者版"
+      url = "/general/"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hahaicanfly"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = "https://github.com/hahaicanfly/personal-blog/blob/main/content"
+    Text = "在 GitHub 上編輯"
+    appendFilePath = true
+
+[menu]
+  [[menu.main]]
+    identifier = "tech"
+    name = "技術版"
+    url = "/tech/"
+    weight = 10
+  [[menu.main]]
+    identifier = "general"
+    name = "一般讀者版"
+    url = "/general/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "標籤"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "關於"
+    url = "/about/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
